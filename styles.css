@@ -1,0 +1,344 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #0077cc;
+    outline: none;
+}
+
+/* Hero Section */
+.hero {
+    background: #e9f0f7;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #004a99;
+}
+
+/* Tourist Spots */
+.tourist-spots h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #222;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 8px;
+}
+
+.spot {
+    margin-bottom: 40px;
+}
+
+.spot h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #004a99;
+}
+
+figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    background: #fff;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Local Products */
+.local-products h3 {
+    font-size: 1.6rem;
+    margin: 40px 0 20px 0;
+    color: #222;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 8px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover,
+.product-card:focus-within {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.product-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #004a99;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.product-card button {
+    margin-top: auto;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover,
+.product-card button:focus {
+    background-color: #005fa3;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #004a99;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+.contact-form button {
+    align-self: center;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background-color: #005fa3;
+    outline: none;
+}
+
+/* Aside Section */
+aside {
+    max-width: 320px;
+    margin: 0 auto 50px auto;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    text-align: center;
+    color: #555;
+}
+
+aside h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #004a99;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 8px;
+}
+
+aside h4 {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #004a99;
+    margin-bottom: 15px;
+}
+
+aside p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+aside img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Layout */
+@media (min-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .contact-form {
+        flex: 2;
+        margin-bottom: 0;
+    }
+
+    aside {
+        flex: 1;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form button {
+        width: 100%;
+    }
+}
